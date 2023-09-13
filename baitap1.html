@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Diem vat ly
+<input type="number" id="vatly"><br>
+Diem hoa hoc
+<input type="number" id="hoahoc"><br>
+Diem sinh hoc
+<input type="number" id="sinhhoc"><br>
+<button type="button" value="Diem trung binh" onclick="total()">Xem diem</button>
+
+<p id="total"></p>
+<p id="mediumscore"></p>
+
+<script>
+    function total(){
+        let vatly = +document.getElementById("vatly").value;
+        let hoahoc = +document.getElementById("hoahoc").value;
+        let sinhhoc = +document.getElementById("sinhhoc").value;
+        let total = vatly + hoahoc + sinhhoc;
+        let mediumscore = total / 3;
+        document.getElementById("total").innerHTML = ('Diem tong:' +total);
+        document.getElementById("mediumscore").innerHTML = ('Diem trung binh:' +mediumscore);
+
+    }
+</script>
+
+</body>
+</html>

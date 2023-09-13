@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu vi hinh tron</title>
+</head>
+<body>
+<p>Nhap ban kinh hinh tron</p>
+<input type="number" id="radius">
+<button type="button" onclick="acerage()">Chu vi</button>
+<p id="area"></p>
+<script>
+    function acerage() {
+        let radius = +document.getElementById("radius").value;
+        let area = (radius * 2) * 3.14;
+        document.getElementById("area").innerHTML = ('Ket qua :' +area);
+    }
+</script>
+
+</body>
+</html>
